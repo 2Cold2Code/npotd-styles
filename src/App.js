@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
 import axios from "axios";
-
+import {HeaderStyle} from './styles/header_style';
 import Header from "./Header";
 import MainSection from "./MainSection";
 
@@ -24,10 +24,6 @@ function App() {
   return (
     <div className="App">
       <Header className="header" />
-      styled.header`
-        display: flex;
-        justify-Content: space-between;
-        `
       <MainSection className="main-body" data={holdResponse} />
     </div>
   );
